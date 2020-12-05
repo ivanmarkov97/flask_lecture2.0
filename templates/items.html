@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block items %}
+
+<ol>
+    {% for item in list_items %}
+    <li>
+        <p>{{item.name}}</p>
+    </li>
+    {% endfor %}
+</ol>
+
+<a href="{{back}}">Back</a>
+
+{% endblock %}
